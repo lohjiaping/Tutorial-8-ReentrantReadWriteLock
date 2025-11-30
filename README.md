@@ -10,15 +10,15 @@
 
 ## c. What is the advantage of using ReentrantReadWriteLock over synchronized method in this program? (2 marks) 
 
-The advantages of using ReentrantReadWriteLock is allow the Threads enter into the lock on a resources  many times, more efficiency compared to use synchronized method. 
+`The advantages of using ReentrantReadWriteLock is allow the Threads enter into the lock on a resources  many times, more efficiency compared to use synchronized method. `
 
 
 ## d. Explain the difference between readLock() and writeLock().(3 marks) 
 
-The readLock() is like a shared lock that allow mutiple threads to enter into the lock at the same time. However, the writeLock() is like an exclusive lock only allows one thread to hold this lock at a time. The users on readLock() can only read to prevent Race conditions and the users on writeLock() nobody thread can write until the lock is released  
+`The readLock() is like a shared lock that allow mutiple threads to enter into the lock at the same time. However, the writeLock() is like an exclusive lock only allows one thread to hold this lock at a time. The users on readLock() can only read to prevent Race conditions and the users on writeLock() nobody thread can write until the lock is released.`
 
  
 
 ## e. Why is writeLock.unlock() placed in a finally block? (2 marks) 
 
-The writeLock.unlock() placed in a finally block is to ensure that the Lock is always released eventhought the error occur, it can release the lock without blocking it, preventing of Deadlock happen. 
+`The writeLock.unlock() placed in a finally block is to ensure that the Lock is always released eventhought the error occur, it can release the lock without blocking it, preventing of Deadlock happen. `
